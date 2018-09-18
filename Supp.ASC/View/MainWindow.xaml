@@ -1,0 +1,12 @@
+﻿<Window x:Class="Supp.ASC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+        Title="ATG Zählprogramm" Height="350" Width="525">
+    <Grid>
+        <Button Content ="ATG Liste auswählen"  Command="{Binding SelectCommand}"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.067,0.25"/>
+        <Button Content="Daten auslesen" Command ="{Binding ReadCommand}" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Width="120"/>
+        <CheckBox IsChecked ="{Binding ExcelIsSelected}" Content="Liste in Excel öffnen" HorizontalAlignment="Left" Margin="155,43,0,0" VerticalAlignment="Top"/>
+        <TextBox Text ="{Binding TextBoxPath}" HorizontalAlignment="Left" Height="23" Margin="155,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
